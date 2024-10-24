@@ -2,6 +2,8 @@
 # Photo Editor
 
 A web-based photo editing application built with Flask and JavaScript that allows users to perform basic image editing operations.
+![image](https://github.com/user-attachments/assets/842f83d3-fa52-4d1b-bb1b-62ab83b10dc1)
+
 
 ## Features
 
