@@ -96,10 +96,3 @@ python app.py
 - Add support for different aspect ratios
 - Add undo/redo functionality
 
-## License
-
-[Add your license here]
-
-## Contributing
-
-[Add contribution guidelines here]
