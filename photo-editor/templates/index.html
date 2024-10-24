@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+</head>
+<body>
+    <h1>Photo Editor</h1>
+
+    <div id="editor-container">
+        <!-- Left Pane: Image Upload -->
+        <div id="left-pane">
+            <h2>Original Image</h2>
+            <input type="file" id="imageInput" accept="image/*">
+            <br><br>
+            <img id="imageToEdit" style="max-width: 100%;"/>
+            <div id="buttons">
+                <button id="cropButton">Crop</button>
+                <button id="resizeButton">Resize</button>
+                <button id="rotateButton">Rotate</button>
+                <button id="addTextButton">Add Text</button>
+                <button id="downloadButton">Download</button>
+            </div>
+        </div>
+
+        <!-- Right Pane: Edited Image -->
+        <div id="right-pane">
+            <h2>Edited Image</h2>
+            <canvas id="imageCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

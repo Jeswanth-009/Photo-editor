@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#editor-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#left-pane, #right-pane {
+    width: 45%;
+}
+
+canvas {
+    border: 1px solid black;
+    max-width: 100%;
+}
+
+button {
+    margin: 5px;
+}
