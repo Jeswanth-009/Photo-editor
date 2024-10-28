@@ -1,23 +1,137 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+#image-container {
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #dee2e6;
+    border-radius: 5px;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Controls container styles */
+.controls-container {
+    position: relative;
+    height: auto;
+    min-height: 400px;
+    overflow-y: visible;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+/* Text editor section styles */
+.text-editor-section {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Make text options container horizontal */
+#text-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+#text-options .form-group {
+    margin: 0;
+    flex: 1;
+    min-width: 120px;
+}
+
+/* Download section styles */
+.download-section {
+    position: static;
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #dee2e6;
     text-align: center;
 }
 
-#editor-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
-#left-pane, #right-pane {
-    width: 45%;
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
 
-canvas {
-    border: 1px solid black;
-    max-width: 100%;
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
 }
 
-button {
-    margin: 5px;
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Form control styles */
+.form-control {
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Make color input larger and easier to use */
+input[type="color"] {
+    height: 40px;
+    padding: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .controls-container {
+        height: auto;
+        overflow-y: visible;
+        padding-bottom: 0;
+    }
+
+    #text-options {
+        flex-direction: column;
+    }
+    
+    #text-options .form-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #image-container {
+        height: 300px;
+    }
 }
